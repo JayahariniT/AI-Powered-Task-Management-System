@@ -1,8 +1,9 @@
 # AI-Powered-Task-Management-System
 An intelligent task management application built using Flask, Pandas, and AI-driven prioritization logic. This project was developed as part of my Data Science &amp; Machine Learning Internship at Zaalima Development.
 Project Structure:
-/task_manager.py  
-/app.py  
-/tasks.csv  
-/metrics  
-/readme.md  
+ai_engine.py
+app.py
+dashboard.html
+index.html
+merged_task_dataset.csv
+task_manager.py
