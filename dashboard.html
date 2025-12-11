@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e1f26, #2c2f35);
+            color: #fff;
+        }
+
+        /* ---------------- SIDEBAR ---------------- */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 230px;
+            height: 100%;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(12px);
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.4);
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            font-weight: 700;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            color: #fff;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: rgba(255,255,255,0.15);
+        }
+
+        /* ---------------- MAIN CONTENT ---------------- */
+        .main {
+            margin-left: 260px;
+            padding: 25px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+        }
+
+        th {
+            background: rgba(255,255,255,0.18);
+            padding: 12px;
+        }
+        td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        tr:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        button {
+            padding: 6px 12px;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        .edit-btn {
+            background: #00d4ff;
+            color: #000;
+        }
+
+        .edit-btn:hover {
+            background: #5ae7ff;
+        }
+
+        .delete-btn {
+            background: #ff4d6d;
+            color: #fff;
+        }
+        
+        .delete-btn:hover {
+            background: #ff6f88;
+        }
+
+        .chart-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .chart-box {
+            flex: 1;
+            background: rgba(255,255,255,0.08);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* ---------------- EDIT MODAL ---------------- */
+        #editModal {
+            display:none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 350px;
+            background: rgba(255,255,255,0.1);
+            padding: 25px;
+            border-radius: 15px;
+            transform: translate(-50%, -50%);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+            color: #fff;
+            z-index: 1000;
+        }
+
+        /* ---------------- INPUTS + SELECT ---------------- */
+        input, select {
+            width: 100%;
+            padding: 10px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 8px;
+            color: #fff;
+            outline: none;
+            margin-bottom: 12px;
+            backdrop-filter: blur(8px);
+            transition: 0.2s;
+        }
+
+        select:hover {
+            background: rgba(255,255,255,0.18);
+            transform: scale(1.02);
+        }
+
+        /* White arrow */
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='28' viewBox='0 0 24 24' width='28' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5'/></svg>");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 18px;
+            padding-right: 35px;
+        }
+
+        /* 🔥 ANIMATED DROPDOWN OPTIONS 🔥 */
+        select option {
+            background-color: #1F2229;
+            color: white;
+            padding: 8px;
+            animation: fadeIn 0.25s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- ---------------- SIDEBAR ---------------- -->
+<div class="sidebar">
+    <h2>⚡ TaskPro</h2>
+    <a href="index.html">➕ Add Task</a>
+    <a href="dashboard.html">📊 Dashboard</a>
+</div>
+
+<!-- ---------------- MAIN CONTENT ---------------- -->
+<div class="main">
+
+    <h1>Dashboard Overview</h1>
+
+    <!-- Task List -->
+    <div class="card">
+        <h2>Tasks for Assignee</h2>
+
+        <select id="assigneeSelect">
+            <option value="charlie">charlie</option>
+            <option value="alice">alice</option>
+            <option value="bob">bob</option>
+            <option value="david">david</option>
+            <option value="eve">eve</option>
+        </select>
+
+        <table id="taskListTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>Priority</th>
+                    <th>Due</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
+    <!-- Charts -->
+    <div class="chart-row">
+        <div class="chart-box"><h3>Tasks by Priority</h3><canvas id="priorityChart"></canvas></div>
+        <div class="chart-box"><h3>Tasks by Assignee</h3><canvas id="assigneeChart"></canvas></div>
+        <div class="chart-box"><h3>Workload</h3><canvas id="workloadPie"></canvas></div>
+    </div>
+
+    <!-- Overdue Tasks -->
+    <div class="card">
+        <h2>Overdue Tasks</h2>
+        <table id="overdueTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Description</th>
+                    <th>Assignee</th>
+                    <th>Priority</th>
+                    <th>Due</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</div>
+
+
+<!-- ---------------- EDIT MODAL ---------------- -->
+<div id="editModal">
+    <h3>Edit Task</h3>
+
+    <label>Description</label>
+    <input id="editDesc">
+
+    <label>Priority</label>
+    <select id="editPriority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+        <option>Urgent</option>
+    </select>
+
+    <label>Due Date</label>
+    <input id="editDueDate" type="date">
+
+    <button onclick="saveEdit()" class="edit-btn">Save</button>
+    <button onclick="hideEdit()" class="delete-btn">Cancel</button>
+</div>
+
+<script>
+
+/* ---------------- LOAD TASKS ---------------- */
+function loadTasksForAssignee(name) {
+    fetch(`http://127.0.0.1:5000/tasks?assignee=${name}`)
+        .then(r => r.json())
+        .then(tasks => {
+
+            let tbody = document.querySelector("#taskListTable tbody");
+            tbody.innerHTML = "";
+
+            tasks.forEach(t => {
+                tbody.innerHTML += `
+                    <tr>
+                        <td>${t.task_id}</td>
+                        <td>${t.description}</td>
+                        <td>${t.priority}</td>
+                        <td>${t.due_date || ""}</td>
+                        <td>
+                            <button class="edit-btn" onclick="showEdit(${t.task_id}, '${t.description}', '${t.priority}', '${t.due_date || ""}')">Edit</button>
+                            <button class="delete-btn" onclick="deleteTask(${t.task_id})">Delete</button>
+                        </td>
+                    </tr>
+                `;
+            });
+        });
+}
+
+document.getElementById("assigneeSelect").addEventListener("change", function() {
+    loadTasksForAssignee(this.value);
+});
+
+/* ---------------- DELETE TASK ---------------- */
+function deleteTask(id) {
+    if (!confirm("Are you sure you want to delete this task?")) return;
+
+    fetch(`http://127.0.0.1:5000/tasks/${id}`, { method: "DELETE" })
+        .then(r => r.json())
+        .then(() => {
+            alert("Task deleted!");
+            reloadAll();
+        });
+}
+
+/* ---------------- EDIT TASK ---------------- */
+let editingId = null;
+
+function showEdit(id, desc, priority, due) {
+    editingId = id;
+    document.getElementById("editDesc").value = desc;
+    document.getElementById("editPriority").value = priority;
+    document.getElementById("editDueDate").value = due;
+    document.getElementById("editModal").style.display = "block";
+}
+
+function hideEdit() {
+    document.getElementById("editModal").style.display = "none";
+}
+
+function saveEdit() {
+    let updated = {
+        description: document.getElementById("editDesc").value,
+        priority: document.getElementById("editPriority").value,
+        due_date: document.getElementById("editDueDate").value
+    };
+
+    fetch(`http://127.0.0.1:5000/tasks/${editingId}`, {
+        method: "PUT",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(updated)
+    })
+    .then(r => r.json())
+    .then(() => {
+        alert("Task updated!");
+        hideEdit();
+        reloadAll();
+    });
+}
+
+/* ---------------- CHARTS ---------------- */
+function loadPriorityChart() {
+    fetch("http://127.0.0.1:5000/metrics/priority")
+    .then(r => r.json())
+    .then(data => {
+        new Chart(priorityChart, {
+            type: "bar",
+            data: {
+                labels: data.labels,
+                datasets: [{ data: data.values, backgroundColor: "#4e73df" }]
+            }
+        });
+    });
+}
+
+function loadAssigneeChart() {
+    fetch("http://127.0.0.1:5000/metrics/assignee")
+    .then(r => r.json())
+    .then(data => {
+        new Chart(assigneeChart, {
+            type: "bar",
+            data: {
+                labels: data.labels,
+                datasets: [{ data: data.values, backgroundColor: "#1cc88a" }]
+            }
+        });
+    });
+}
+
+function loadWorkloadPie() {
+    fetch("http://127.0.0.1:5000/metrics/workload")
+    .then(r => r.json())
+    .then(data => {
+        new Chart(workloadPie, {
+            type: "pie",
+            data: {
+                labels: data.labels,
+                datasets: [{ data: data.values }]
+            }
+        });
+    });
+}
+
+/* ---------------- OVERDUE ---------------- */
+function loadOverdue() {
+    fetch("http://127.0.0.1:5000/metrics/overdue")
+    .then(r => r.json())
+    .then(data => {
+        let tb = document.querySelector("#overdueTable tbody");
+        tb.innerHTML = "";
+        data.tasks.forEach(t => {
+            tb.innerHTML += `
+                <tr>
+                    <td>${t.task_id}</td>
+                    <td>${t.description}</td>
+                    <td>${t.assignee}</td>
+                    <td>${t.priority}</td>
+                    <td>${t.due_date}</td>
+                </tr>
+            `;
+        });
+    });
+}
+
+/* ---------------- RELOAD EVERYTHING ---------------- */
+function reloadAll() {
+    loadTasksForAssignee(document.getElementById("assigneeSelect").value);
+    loadPriorityChart();
+    loadAssigneeChart();
+    loadWorkloadPie();
+    loadOverdue();
+}
+
+/* ---------------- INITIAL LOAD ---------------- */
+reloadAll();
+
+</script>
+
+</body>
+</html>

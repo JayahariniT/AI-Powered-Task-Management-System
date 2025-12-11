@@ -1,0 +1,209 @@
+task_id,description,task_type,priority,assignee,created_at,due_date,estimated_effort,user_workload
+1.0,UI redesign for dashboard analytics page,Bug,Urgent,David,2025-11-29 00:00:00.000000,2024-03-30,7,29
+2.0,Fix login issue when user enters wrong OTP,Task,Low,Alice,2025-11-29 00:00:00.000000,2023-05-12,15,43
+3.0,Automate daily report generation,Improvement,Low,David,2025-11-29 00:00:00.000000,2025-01-24,8,21
+4.0,Optimize API response time for tasks endpoint,Bug,High,Charlie,2025-11-29 00:00:00.000000,2024-09-06,7,19
+5.0,Implement new payment gateway integration,Feature,Urgent,Alice,2025-11-29 00:00:00.000000,2024-05-10,11,11
+6.0,Implement new payment gateway integration,Improvement,High,David,2025-11-29 00:00:00.000000,2024-11-08,4,40
+7.0,Refactor codebase for maintainability,Bug,High,Alice,2025-11-29 00:00:00.000000,2023-10-09,3,22
+8.0,Implement new payment gateway integration,Feature,High,David,2025-11-29 00:00:00.000000,2024-05-22,2,24
+9.0,Add dark mode feature for better usability,Improvement,High,Eve,2025-11-29 00:00:00.000000,2023-07-13,12,30
+10.0,UI redesign for dashboard analytics page,Feature,Medium,Alice,2025-11-29 00:00:00.000000,2024-04-07,6,2
+11.0,Add dark mode feature for better usability,Improvement,High,Alice,2025-11-29 00:00:00.000000,2024-07-23,1,12
+12.0,Integrate chatbot for support queries,Bug,Urgent,Alice,2025-11-29 00:00:00.000000,2024-03-04,12,25
+13.0,Automate daily report generation,Feature,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-04-26,17,27
+14.0,Refactor codebase for maintainability,Feature,Urgent,Eve,2025-11-29 00:00:00.000000,2025-01-14,10,28
+15.0,Improve search filtering for task list,Feature,Low,Charlie,2025-11-29 00:00:00.000000,2024-08-29,16,15
+16.0,Improve search filtering for task list,Feature,Medium,David,2025-11-29 00:00:00.000000,2023-07-08,15,44
+17.0,Improve search filtering for task list,Bug,Medium,Alice,2025-11-29 00:00:00.000000,2024-08-20,3,37
+18.0,UI redesign for dashboard analytics page,Bug,Urgent,Charlie,2025-11-29 00:00:00.000000,2025-01-07,19,7
+19.0,Resolve crash when uploading large files,Task,Urgent,David,2025-11-29 00:00:00.000000,2023-05-19,9,39
+20.0,Optimize API response time for tasks endpoint,Task,Low,Alice,2025-11-29 00:00:00.000000,2023-01-23,18,4
+21.0,Implement new payment gateway integration,Task,High,Charlie,2025-11-29 00:00:00.000000,2023-09-14,14,9
+22.0,Optimize API response time for tasks endpoint,Improvement,Medium,Charlie,2025-11-29 00:00:00.000000,2024-08-29,2,20
+23.0,Refactor codebase for maintainability,Bug,High,David,2025-11-29 00:00:00.000000,2023-02-12,15,7
+24.0,Integrate chatbot for support queries,Task,Low,David,2025-11-29 00:00:00.000000,2025-01-02,12,8
+25.0,Integrate chatbot for support queries,Improvement,High,Alice,2025-11-29 00:00:00.000000,2024-05-11,15,35
+26.0,UI redesign for dashboard analytics page,Bug,Medium,Charlie,2025-11-29 00:00:00.000000,2023-10-30,14,17
+27.0,Refactor codebase for maintainability,Improvement,Medium,Eve,2025-11-29 00:00:00.000000,2024-02-04,4,40
+28.0,Fix login issue when user enters wrong OTP,Improvement,Medium,Bob,2025-11-29 00:00:00.000000,2023-06-14,4,2
+29.0,Optimize API response time for tasks endpoint,Feature,Urgent,Charlie,2025-11-29 00:00:00.000000,2023-05-29,6,42
+30.0,Fix login issue when user enters wrong OTP,Feature,High,Charlie,2025-11-29 00:00:00.000000,2023-06-03,4,29
+31.0,Refactor codebase for maintainability,Task,Low,Bob,2025-11-29 00:00:00.000000,2024-12-01,18,26
+32.0,Optimize API response time for tasks endpoint,Feature,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-03-09,12,34
+33.0,Integrate chatbot for support queries,Improvement,Low,Eve,2025-11-29 00:00:00.000000,2024-08-20,10,36
+34.0,Automate daily report generation,Bug,Medium,David,2025-11-29 00:00:00.000000,2024-05-01,14,31
+35.0,Implement new payment gateway integration,Improvement,Urgent,Charlie,2025-11-29 00:00:00.000000,2023-04-02,16,15
+36.0,Improve search filtering for task list,Improvement,Urgent,David,2025-11-29 00:00:00.000000,2024-04-02,8,14
+37.0,Improve search filtering for task list,Task,High,Charlie,2025-11-29 00:00:00.000000,2023-04-03,8,21
+38.0,Resolve crash when uploading large files,Bug,Low,Charlie,2025-11-29 00:00:00.000000,2023-06-22,16,45
+39.0,Integrate chatbot for support queries,Feature,Medium,Charlie,2025-11-29 00:00:00.000000,2023-07-07,18,47
+40.0,Refactor codebase for maintainability,Improvement,High,Eve,2025-11-29 00:00:00.000000,2024-07-05,13,41
+41.0,Add dark mode feature for better usability,Feature,Low,Charlie,2025-11-29 00:00:00.000000,2024-08-12,15,45
+42.0,Add dark mode feature for better usability,Task,Low,David,2025-11-29 00:00:00.000000,2024-09-15,1,25
+43.0,Implement new payment gateway integration,Task,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-03-07,7,9
+44.0,Automate daily report generation,Task,Low,Bob,2025-11-29 00:00:00.000000,2023-12-31,1,44
+45.0,Add dark mode feature for better usability,Task,Medium,David,2025-11-29 00:00:00.000000,2023-05-21,8,24
+46.0,Implement new payment gateway integration,Bug,Urgent,Eve,2025-11-29 00:00:00.000000,2024-03-19,11,17
+47.0,Improve search filtering for task list,Improvement,Medium,Alice,2025-11-29 00:00:00.000000,2023-06-03,8,35
+48.0,Implement new payment gateway integration,Improvement,High,Eve,2025-11-29 00:00:00.000000,2023-10-06,3,33
+49.0,Refactor codebase for maintainability,Improvement,Low,David,2025-11-29 00:00:00.000000,2024-10-13,5,42
+50.0,Integrate chatbot for support queries,Improvement,Low,Bob,2025-11-29 00:00:00.000000,2024-05-09,7,41
+51.0,UI redesign for dashboard analytics page,Improvement,Low,David,2025-11-29 00:00:00.000000,2023-08-03,7,9
+52.0,Resolve crash when uploading large files,Task,Urgent,David,2025-11-29 00:00:00.000000,2023-10-30,8,12
+53.0,Optimize API response time for tasks endpoint,Task,High,David,2025-11-29 00:00:00.000000,2023-05-27,2,33
+54.0,Integrate chatbot for support queries,Task,High,Charlie,2025-11-29 00:00:00.000000,2023-05-29,16,23
+55.0,Refactor codebase for maintainability,Bug,Medium,Charlie,2025-11-29 00:00:00.000000,2023-11-13,5,35
+56.0,UI redesign for dashboard analytics page,Improvement,High,Alice,2025-11-29 00:00:00.000000,2024-12-08,12,40
+57.0,Implement new payment gateway integration,Task,High,Charlie,2025-11-29 00:00:00.000000,2023-10-02,3,1
+58.0,Improve search filtering for task list,Improvement,Low,Bob,2025-11-29 00:00:00.000000,2023-05-03,3,37
+59.0,Integrate chatbot for support queries,Task,Urgent,Eve,2025-11-29 00:00:00.000000,2024-04-26,15,14
+60.0,Automate daily report generation,Bug,High,Bob,2025-11-29 00:00:00.000000,2024-11-25,3,1
+61.0,Improve search filtering for task list,Improvement,High,Bob,2025-11-29 00:00:00.000000,2024-06-26,5,26
+62.0,Automate daily report generation,Feature,High,Eve,2025-11-29 00:00:00.000000,2024-07-25,14,39
+63.0,Improve search filtering for task list,Task,High,Bob,2025-11-29 00:00:00.000000,2024-08-18,9,15
+64.0,Fix login issue when user enters wrong OTP,Task,Low,Bob,2025-11-29 00:00:00.000000,2024-12-19,15,26
+65.0,Fix login issue when user enters wrong OTP,Feature,High,Alice,2025-11-29 00:00:00.000000,2024-01-13,10,13
+66.0,Integrate chatbot for support queries,Improvement,Low,Bob,2025-11-29 00:00:00.000000,2024-12-01,19,32
+67.0,Automate daily report generation,Task,Medium,Charlie,2025-11-29 00:00:00.000000,2023-07-20,7,49
+68.0,Refactor codebase for maintainability,Improvement,Medium,Charlie,2025-11-29 00:00:00.000000,2023-07-06,4,30
+69.0,Refactor codebase for maintainability,Feature,Medium,Charlie,2025-11-29 00:00:00.000000,2024-03-23,5,23
+70.0,Automate daily report generation,Improvement,Medium,Alice,2025-11-29 00:00:00.000000,2024-05-07,7,45
+71.0,Improve search filtering for task list,Bug,High,Eve,2025-11-29 00:00:00.000000,2023-12-21,15,43
+72.0,Refactor codebase for maintainability,Task,Low,Charlie,2025-11-29 00:00:00.000000,2024-07-28,4,13
+73.0,Optimize API response time for tasks endpoint,Task,High,Bob,2025-11-29 00:00:00.000000,2023-04-12,7,22
+74.0,Automate daily report generation,Task,Medium,David,2025-11-29 00:00:00.000000,2023-02-27,2,42
+75.0,Implement new payment gateway integration,Task,High,Alice,2025-11-29 00:00:00.000000,2023-03-20,13,6
+76.0,Implement new payment gateway integration,Improvement,Urgent,David,2025-11-29 00:00:00.000000,2024-04-23,12,44
+77.0,Improve search filtering for task list,Task,Medium,Bob,2025-11-29 00:00:00.000000,2023-08-11,11,28
+78.0,Integrate chatbot for support queries,Task,Urgent,Alice,2025-11-29 00:00:00.000000,2023-09-07,7,33
+79.0,Automate daily report generation,Improvement,Low,Bob,2025-11-29 00:00:00.000000,2023-06-26,1,27
+80.0,Integrate chatbot for support queries,Bug,Low,Alice,2025-11-29 00:00:00.000000,2023-03-16,13,41
+81.0,Resolve crash when uploading large files,Feature,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-11-29,3,39
+82.0,Optimize API response time for tasks endpoint,Task,Low,Bob,2025-11-29 00:00:00.000000,2024-11-21,6,8
+83.0,Add dark mode feature for better usability,Feature,High,David,2025-11-29 00:00:00.000000,2023-08-03,9,37
+84.0,Implement new payment gateway integration,Improvement,Low,Charlie,2025-11-29 00:00:00.000000,2023-04-13,1,42
+85.0,Automate daily report generation,Feature,Medium,Charlie,2025-11-29 00:00:00.000000,2024-03-14,12,24
+86.0,Optimize API response time for tasks endpoint,Feature,Urgent,David,2025-11-29 00:00:00.000000,2023-11-30,15,32
+87.0,Implement new payment gateway integration,Task,Medium,Charlie,2025-11-29 00:00:00.000000,2024-05-30,9,49
+88.0,Integrate chatbot for support queries,Bug,Urgent,David,2025-11-29 00:00:00.000000,2023-05-25,17,12
+89.0,Fix login issue when user enters wrong OTP,Feature,High,Charlie,2025-11-29 00:00:00.000000,2023-06-28,7,2
+90.0,Integrate chatbot for support queries,Bug,Medium,Eve,2025-11-29 00:00:00.000000,2024-06-14,3,49
+91.0,Integrate chatbot for support queries,Task,Medium,Charlie,2025-11-29 00:00:00.000000,2025-01-01,5,49
+92.0,Improve search filtering for task list,Improvement,Medium,Eve,2025-11-29 00:00:00.000000,2023-09-06,17,49
+93.0,Optimize API response time for tasks endpoint,Bug,Urgent,Bob,2025-11-29 00:00:00.000000,2023-11-04,2,2
+94.0,Resolve crash when uploading large files,Bug,Urgent,Eve,2025-11-29 00:00:00.000000,2023-10-02,5,32
+95.0,Integrate chatbot for support queries,Task,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-06-08,1,1
+96.0,UI redesign for dashboard analytics page,Feature,High,Alice,2025-11-29 00:00:00.000000,2023-09-16,19,2
+97.0,Refactor codebase for maintainability,Improvement,Urgent,David,2025-11-29 00:00:00.000000,2023-11-24,12,26
+98.0,Automate daily report generation,Bug,Medium,David,2025-11-29 00:00:00.000000,2023-10-24,6,32
+99.0,UI redesign for dashboard analytics page,Improvement,High,Alice,2025-11-29 00:00:00.000000,2024-11-17,4,11
+100.0,Optimize API response time for tasks endpoint,Improvement,Medium,Eve,2025-11-29 00:00:00.000000,2024-05-06,17,38
+101.0,UI redesign for dashboard analytics page,Task,Urgent,Bob,2025-11-29 00:00:00.000000,2024-09-01,5,34
+102.0,Optimize API response time for tasks endpoint,Bug,Low,Eve,2025-11-29 00:00:00.000000,2023-12-06,6,22
+103.0,Improve search filtering for task list,Feature,Low,David,2025-11-29 00:00:00.000000,2024-05-14,11,48
+104.0,Improve search filtering for task list,Task,Urgent,David,2025-11-29 00:00:00.000000,2023-01-26,16,33
+105.0,Integrate chatbot for support queries,Bug,High,Charlie,2025-11-29 00:00:00.000000,2023-09-14,9,6
+106.0,Fix login issue when user enters wrong OTP,Bug,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-02-15,16,29
+107.0,Implement new payment gateway integration,Improvement,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-10-09,3,20
+108.0,Improve search filtering for task list,Feature,Low,Alice,2025-11-29 00:00:00.000000,2023-07-01,4,19
+109.0,Add dark mode feature for better usability,Feature,Urgent,Bob,2025-11-29 00:00:00.000000,2023-01-22,3,19
+110.0,Implement new payment gateway integration,Task,Medium,Eve,2025-11-29 00:00:00.000000,2023-12-09,7,41
+111.0,Optimize API response time for tasks endpoint,Task,Urgent,Charlie,2025-11-29 00:00:00.000000,2023-06-14,1,40
+112.0,Implement new payment gateway integration,Improvement,Low,Eve,2025-11-29 00:00:00.000000,2024-12-17,7,18
+113.0,Resolve crash when uploading large files,Bug,High,Eve,2025-11-29 00:00:00.000000,2023-03-15,8,1
+114.0,Refactor codebase for maintainability,Task,Urgent,Charlie,2025-11-29 00:00:00.000000,2024-05-12,11,28
+115.0,Add dark mode feature for better usability,Bug,Medium,David,2025-11-29 00:00:00.000000,2024-03-29,18,23
+116.0,UI redesign for dashboard analytics page,Improvement,Medium,David,2025-11-29 00:00:00.000000,2024-01-10,10,35
+117.0,Refactor codebase for maintainability,Task,Medium,Eve,2025-11-29 00:00:00.000000,2023-06-14,7,16
+118.0,UI redesign for dashboard analytics page,Feature,High,Alice,2025-11-29 00:00:00.000000,2023-12-15,16,49
+119.0,Automate daily report generation,Feature,Low,Bob,2025-11-29 00:00:00.000000,2024-08-13,2,1
+120.0,Improve search filtering for task list,Bug,Low,Charlie,2025-11-29 00:00:00.000000,2024-10-09,16,12
+121.0,Integrate chatbot for support queries,Improvement,Urgent,David,2025-11-29 00:00:00.000000,2025-01-25,5,37
+122.0,Refactor codebase for maintainability,Improvement,Low,Bob,2025-11-29 00:00:00.000000,2025-01-22,9,41
+123.0,Optimize API response time for tasks endpoint,Task,High,Eve,2025-11-29 00:00:00.000000,2024-10-30,3,19
+124.0,Fix login issue when user enters wrong OTP,Improvement,High,Charlie,2025-11-29 00:00:00.000000,2024-12-17,16,16
+125.0,Resolve crash when uploading large files,Task,Urgent,Eve,2025-11-29 00:00:00.000000,2024-10-14,3,20
+126.0,Integrate chatbot for support queries,Bug,Urgent,Bob,2025-11-29 00:00:00.000000,2023-06-25,1,24
+127.0,Optimize API response time for tasks endpoint,Improvement,Medium,Charlie,2025-11-29 00:00:00.000000,2024-02-03,11,49
+128.0,Implement new payment gateway integration,Feature,Medium,Alice,2025-11-29 00:00:00.000000,2024-09-16,8,36
+129.0,Refactor codebase for maintainability,Improvement,Urgent,Alice,2025-11-29 00:00:00.000000,2023-10-25,6,40
+130.0,Refactor codebase for maintainability,Feature,Medium,David,2025-11-29 00:00:00.000000,2024-04-12,3,48
+131.0,Automate daily report generation,Feature,High,Bob,2025-11-29 00:00:00.000000,2024-05-23,3,25
+132.0,Implement new payment gateway integration,Bug,High,David,2025-11-29 00:00:00.000000,2023-04-15,18,46
+133.0,Implement new payment gateway integration,Bug,Medium,Bob,2025-11-29 00:00:00.000000,2024-02-03,18,2
+134.0,Implement new payment gateway integration,Task,Urgent,Charlie,2025-11-29 00:00:00.000000,2023-02-23,3,16
+135.0,UI redesign for dashboard analytics page,Feature,High,Eve,2025-11-29 00:00:00.000000,2024-10-03,9,36
+136.0,UI redesign for dashboard analytics page,Bug,Urgent,David,2025-11-29 00:00:00.000000,2024-12-10,1,4
+137.0,Resolve crash when uploading large files,Task,High,Alice,2025-11-29 00:00:00.000000,2024-01-10,1,14
+138.0,Implement new payment gateway integration,Bug,Urgent,Alice,2025-11-29 00:00:00.000000,2023-11-23,16,20
+139.0,Implement new payment gateway integration,Bug,High,Alice,2025-11-29 00:00:00.000000,2023-07-15,8,7
+140.0,Fix login issue when user enters wrong OTP,Task,High,Eve,2025-11-29 00:00:00.000000,2024-04-20,3,17
+141.0,Improve search filtering for task list,Feature,High,Alice,2025-11-29 00:00:00.000000,2023-09-13,1,48
+142.0,Optimize API response time for tasks endpoint,Improvement,Urgent,Eve,2025-11-29 00:00:00.000000,2024-06-08,12,22
+143.0,Optimize API response time for tasks endpoint,Bug,Urgent,Eve,2025-11-29 00:00:00.000000,2023-01-26,14,30
+144.0,Fix login issue when user enters wrong OTP,Improvement,Low,Eve,2025-11-29 00:00:00.000000,2023-11-13,6,38
+145.0,Integrate chatbot for support queries,Improvement,Medium,David,2025-11-29 00:00:00.000000,2023-10-07,13,8
+146.0,UI redesign for dashboard analytics page,Task,High,Bob,2025-11-29 00:00:00.000000,2023-06-12,2,21
+147.0,Refactor codebase for maintainability,Feature,Medium,Charlie,2025-11-29 00:00:00.000000,2023-03-01,1,28
+148.0,Resolve crash when uploading large files,Feature,Urgent,Eve,2025-11-29 00:00:00.000000,2024-08-21,15,33
+149.0,UI redesign for dashboard analytics page,Feature,Medium,Alice,2025-11-29 00:00:00.000000,2024-08-14,5,48
+150.0,Resolve crash when uploading large files,Task,Medium,Charlie,2025-11-29 00:00:00.000000,2023-12-27,19,4
+151.0,Fix login issue when user enters wrong OTP,Bug,Low,Alice,2025-11-29 00:00:00.000000,2023-05-10,3,49
+152.0,Add dark mode feature for better usability,Feature,Low,Eve,2025-11-29 00:00:00.000000,2023-09-21,17,44
+153.0,Fix login issue when user enters wrong OTP,Feature,Medium,Charlie,2025-11-29 00:00:00.000000,2024-02-11,14,6
+154.0,Integrate chatbot for support queries,Bug,Medium,Bob,2025-11-29 00:00:00.000000,2024-04-06,3,41
+155.0,UI redesign for dashboard analytics page,Improvement,High,Eve,2025-11-29 00:00:00.000000,2024-10-21,5,24
+156.0,Improve search filtering for task list,Bug,Low,Eve,2025-11-29 00:00:00.000000,2024-12-24,17,46
+157.0,Integrate chatbot for support queries,Task,Urgent,Bob,2025-11-29 00:00:00.000000,2024-08-25,3,33
+158.0,Add dark mode feature for better usability,Feature,Medium,Charlie,2025-11-29 00:00:00.000000,2023-12-14,1,3
+159.0,Fix login issue when user enters wrong OTP,Feature,Medium,Eve,2025-11-29 00:00:00.000000,2023-03-01,18,25
+160.0,Improve search filtering for task list,Improvement,Low,David,2025-11-29 00:00:00.000000,2024-11-10,10,31
+161.0,Integrate chatbot for support queries,Feature,Low,Eve,2025-11-29 00:00:00.000000,2023-12-06,3,40
+162.0,Resolve crash when uploading large files,Task,Medium,David,2025-11-29 00:00:00.000000,2023-07-06,14,24
+163.0,Add dark mode feature for better usability,Bug,Medium,Charlie,2025-11-29 00:00:00.000000,2023-10-13,18,32
+164.0,UI redesign for dashboard analytics page,Bug,Urgent,Alice,2025-11-29 00:00:00.000000,2023-04-28,15,22
+165.0,Automate daily report generation,Task,High,Bob,2025-11-29 00:00:00.000000,2023-10-23,2,27
+166.0,Implement new payment gateway integration,Improvement,High,Alice,2025-11-29 00:00:00.000000,2023-10-27,10,2
+167.0,Resolve crash when uploading large files,Feature,High,Eve,2025-11-29 00:00:00.000000,2024-04-27,17,40
+168.0,Add dark mode feature for better usability,Improvement,Urgent,Eve,2025-11-29 00:00:00.000000,2023-04-17,1,9
+169.0,UI redesign for dashboard analytics page,Bug,Low,Bob,2025-11-29 00:00:00.000000,2024-08-11,11,48
+170.0,Implement new payment gateway integration,Improvement,Medium,Bob,2025-11-29 00:00:00.000000,2023-02-02,7,29
+171.0,Automate daily report generation,Improvement,Low,Bob,2025-11-29 00:00:00.000000,2024-05-19,10,26
+172.0,Automate daily report generation,Feature,Low,Charlie,2025-11-29 00:00:00.000000,2024-12-04,3,25
+173.0,Refactor codebase for maintainability,Bug,Urgent,Charlie,2025-11-29 00:00:00.000000,2023-04-19,13,7
+174.0,Add dark mode feature for better usability,Bug,Urgent,Eve,2025-11-29 00:00:00.000000,2024-11-01,4,45
+175.0,Resolve crash when uploading large files,Feature,Medium,David,2025-11-29 00:00:00.000000,2024-02-28,1,8
+176.0,Automate daily report generation,Bug,High,Alice,2025-11-29 00:00:00.000000,2023-02-18,14,16
+177.0,Integrate chatbot for support queries,Improvement,Medium,Alice,2025-11-29 00:00:00.000000,2024-04-15,14,12
+178.0,Integrate chatbot for support queries,Improvement,Urgent,Alice,2025-11-29 00:00:00.000000,2024-03-09,19,23
+179.0,Resolve crash when uploading large files,Bug,Low,Charlie,2025-11-29 00:00:00.000000,2024-05-31,15,28
+180.0,Integrate chatbot for support queries,Feature,Urgent,David,2025-11-29 00:00:00.000000,2023-04-27,2,2
+181.0,UI redesign for dashboard analytics page,Bug,Medium,Eve,2025-11-29 00:00:00.000000,2023-09-22,19,25
+182.0,Resolve crash when uploading large files,Feature,Urgent,Bob,2025-11-29 00:00:00.000000,2023-11-04,17,42
+183.0,Integrate chatbot for support queries,Bug,Low,David,2025-11-29 00:00:00.000000,2024-11-18,6,15
+184.0,UI redesign for dashboard analytics page,Feature,High,Charlie,2025-11-29 00:00:00.000000,2023-04-05,11,37
+185.0,Integrate chatbot for support queries,Bug,Urgent,David,2025-11-29 00:00:00.000000,2023-05-09,1,8
+186.0,Refactor codebase for maintainability,Feature,High,David,2025-11-29 00:00:00.000000,2024-05-06,12,44
+187.0,Integrate chatbot for support queries,Improvement,Urgent,Alice,2025-11-29 00:00:00.000000,2024-12-28,5,39
+188.0,Refactor codebase for maintainability,Task,Urgent,Alice,2025-11-29 00:00:00.000000,2023-01-12,4,6
+189.0,Implement new payment gateway integration,Task,Urgent,Eve,2025-11-29 00:00:00.000000,2023-06-23,13,32
+190.0,Automate daily report generation,Task,High,David,2025-11-29 00:00:00.000000,2023-04-17,15,35
+191.0,Resolve crash when uploading large files,Bug,High,Alice,2025-11-29 00:00:00.000000,2024-02-18,8,16
+192.0,Integrate chatbot for support queries,Improvement,Medium,Eve,2025-11-29 00:00:00.000000,2024-12-25,13,42
+193.0,Improve search filtering for task list,Task,Urgent,Alice,2025-11-29 00:00:00.000000,2024-08-29,19,17
+194.0,Optimize API response time for tasks endpoint,Improvement,Urgent,David,2025-11-29 00:00:00.000000,2024-10-28,19,28
+195.0,Resolve crash when uploading large files,Feature,Low,Alice,2025-11-29 00:00:00.000000,2023-01-30,5,26
+196.0,Improve search filtering for task list,Improvement,High,Bob,2025-11-29 00:00:00.000000,2023-02-03,9,12
+197.0,Automate daily report generation,Feature,High,Alice,2025-11-29 00:00:00.000000,2023-01-18,1,1
+198.0,Add dark mode feature for better usability,Bug,Medium,Bob,2025-11-29 00:00:00.000000,2024-09-10,15,34
+199.0,UI redesign for dashboard analytics page,Task,Medium,David,2025-11-29 00:00:00.000000,2024-08-14,16,25
+200.0,Optimize API response time for tasks endpoint,Feature,Urgent,Bob,2025-11-29 00:00:00.000000,2024-02-08,8,45
+,,Nan,Nan,nan,2025-11-29 13:02:53.000000,2025-12-06,0,0
+,,Nan,Nan,nan,2025-11-29 13:02:53.000000,2025-12-06,0,0
+,,Nan,Nan,nan,2025-11-29 13:02:53.000000,2025-12-06,0,0
+225.0,,Task,Low,Unassigned,2025-11-29 13:03:17.000000,2025-12-06,0,1
+226.0,,Task,Low,Unassigned,2025-11-29 13:03:18.000000,2025-12-06,0,1
+227.0,,Task,Low,Unassigned,2025-11-29 13:03:19.000000,2025-12-06,0,1
+228.0,,Task,Low,Unassigned,2025-11-29 13:03:19.000000,2025-12-06,0,1
+229.0,hi,Bug,Low,Charlie,2025-11-29 14:54:13.267768,2020-10-10,1,1
